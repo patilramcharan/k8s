@@ -9,4 +9,31 @@ kubectl apply -f namespace.yml
 
 kubectl get namespaces
 
-kubeclt delete -f namespace.yaml
+kubectl delete -f namespace.yaml
+
+kubectl apply -f namespace.yaml
+
+kubectl apply -f deployment.yaml
+
+kubectl get deployments -n development
+
+kubectl get pods -n development
+
+kubectl delete pod namepod -n development
+
+kubectl describe pod podname -n development
+
+kubectl get pods -n development -o wide
+
+kubectl exec -it busypod -- /bin/sh
+
+wget ip
+
+kubectl logs podname -n development
+
+kubectl apply -f service.yaml
+
+kubectl get service on development
+
+kubectl delete -f busybox.yaml
+

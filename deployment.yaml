@@ -18,5 +18,14 @@ spec:
       containers:
         - name: pod-info-container
           image: patilram/pod-info-app:latest
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limit:
+              memory: "128Mi"
+              cpu: "500m"        
           ports:
           - cantainerPort: 3000
+
+
