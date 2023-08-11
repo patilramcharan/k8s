@@ -1,0 +1,26 @@
+apiVersion: app/v1
+kind: deployment
+metadata:
+  name: quote-service
+  namespace: development
+  labels: 
+    app: quote-service
+spec: 
+  replica: 1
+  selector:
+  matchlables:
+    app: quote-pservice
+  template:
+    metadata:
+      labels: 
+        app: quote-service
+    spec:
+      cantainer:
+      - name: quote-service-camtainer
+        image: patilram/quote-service:latest
+        port:
+          - containerport: 8080
+
+
+
+  

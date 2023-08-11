@@ -1,0 +1,12 @@
+
+kubectl get nodes
+
+kubectl apply -f namespace.yml
+
+kubeclt get namespaces
+
+kubectl apply -f namespace.yml
+
+kubectl get namespaces
+
+kubeclt delete -f namespace.yaml
